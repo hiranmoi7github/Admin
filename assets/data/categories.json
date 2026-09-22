@@ -1,0 +1,27 @@
+[
+    {
+        "id": "cat_6a7cec89dbfce3.09541878",
+        "name": "Civil Service",
+        "created_at": "2026-08-12 23:58:33"
+    },
+    {
+        "id": "cat_6a7ced0fcfe290.37344032",
+        "name": "Board Exams",
+        "created_at": "2026-08-13 00:00:47"
+    },
+    {
+        "id": "cat_6a7cefb9d60933.39575317",
+        "name": "State Govt. Exams",
+        "created_at": "2026-08-13 00:12:09"
+    },
+    {
+        "id": "cat_6a7cf022c38711.75431184",
+        "name": "Railways Exams",
+        "created_at": "2026-08-13 00:13:54"
+    },
+    {
+        "id": "cat_6a7cf04fc62402.91476795",
+        "name": "Banking Exams",
+        "created_at": "2026-08-13 00:14:39"
+    }
+]

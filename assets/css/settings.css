@@ -1,0 +1,66 @@
+body{
+    font-family:Poppins;
+    background:#f6f7fb;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.preview{
+    width:120px;
+    margin-top:10px;
+}
+
+.preview.small{
+    width:40px;
+}
+
+.save-btn{
+    background:#6d28d9;
+    color:#fff;
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.success{
+    background:#d1fae5;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.error{
+    background:#fee2e2;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.toggle{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}

@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f6f7fb;
+    color:#1f2937;
+}
+
+.dashboard-wrap{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:280px;
+    background:#111827;
+    color:#fff;
+    padding:24px 18px;
+    overflow-y:auto;
+}
+
+.brand{
+    margin-bottom:28px;
+}
+
+.brand h2{
+    font-size:24px;
+    margin-bottom:6px;
+}
+
+.brand p{
+    font-size:13px;
+    color:#cbd5e1;
+}
+
+.menu-section-title{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:#94a3b8;
+    margin:20px 0 10px;
+    font-weight:600;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    padding:12px 14px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.05);
+    transition:.2s ease;
+    font-size:14px;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background:#6d28d9;
+}
+
+.main-content{
+    flex:1;
+    padding:24px;
+}
+
+.topbar{
+    margin-bottom:24px;
+}
+
+.topbar h1{
+    font-size:30px;
+    margin-bottom:6px;
+}
+
+.topbar p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-bottom:24px;
+}
+
+.stat-card{
+    background:#fff;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(17,24,39,.08);
+    border:1px solid rgba(229,231,235,.7);
+}
+
+.stat-card h3{
+    font-size:14px;
+    color:#6b7280;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    font-size:28px;
+    font-weight:700;
+    color:#111827;
+}
+
+.sales-card{
+    background:linear-gradient(90deg,#6d28d9,#8b5cf6);
+}
+
+.sales-card h3,
+.sales-card p{
+    color:#fff;
+}
+
+.panel-grid{
+    display:grid;
+    gap:18px;
+    margin-bottom:24px;
+}
+
+.two-col{
+    grid-template-columns:1fr 1fr;
+}
+
+.panel{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(17,24,39,.08);
+    border:1px solid rgba(229,231,235,.7);
+}
+
+.panel h2{
+    margin-bottom:16px;
+    font-size:20px;
+}
+
+.quick-links{
+    display:grid;
+    gap:10px;
+}
+
+.quick-links a{
+    text-decoration:none;
+    background:#f3f0ff;
+    color:#6d28d9;
+    padding:12px 14px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:14px;
+}
+
+.plain-note{
+    color:#6b7280;
+    line-height:1.8;
+    font-size:14px;
+}
+
+.list-block{
+    list-style:none;
+    display:grid;
+    gap:12px;
+}
+
+.list-block li{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:center;
+    padding:12px 14px;
+    background:#f8fafc;
+    border-radius:12px;
+    font-size:14px;
+}
+
+.badge{
+    background:#ede9fe;
+    color:#6d28d9;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.snapshot-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.snapshot-card{
+    background:#f8fafc;
+    border-radius:14px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.snapshot-card span{
+    font-size:13px;
+    color:#6b7280;
+}
+
+.snapshot-card strong{
+    font-size:24px;
+    color:#111827;
+}
+
+.table-lite-wrap{
+    overflow:auto;
+}
+
+.table-lite{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table-lite th,
+.table-lite td{
+    text-align:left;
+    padding:12px 10px;
+    border-bottom:1px solid #e5e7eb;
+    font-size:13px;
+}
+
+.table-lite th{
+    font-size:12px;
+    text-transform:uppercase;
+    color:#6b7280;
+}
+
+.tag{
+    display:inline-block;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.active{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.inactive{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+.draft{
+    background:#fef3c7;
+    color:#92400e;
+}
+
+.coming-soon{
+    background:#ede9fe;
+    color:#6d28d9;
+}
+
+@media(max-width:1000px){
+    .dashboard-wrap{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .two-col{
+        grid-template-columns:1fr;
+    }
+
+    .snapshot-grid{
+        grid-template-columns:1fr;
+    }
+}
